@@ -11,10 +11,10 @@ metastatic mass and the cumulative number of metastases, respectively, from the 
 growth model that describes the primary tumor growth by means of an Ordinary Differential Equation (ODE) and 
 the evolution of the metastatic density using a transport Partial Differential Equation (PDE), [2]. 
 
-The software implements a numerical method developed in the following two very recent papers:
+The software implements a numerical method developed in the following two very recent papers: <br>
 [1] M.C. De Bonis, C. Laurita, V. Sagaria. A numerical method for linear Volterra integral equations on 
 infinite intervals and its application to the resolution of metastatic tumor growth. Appl. Num. Math. 
-172 (2022), 475-496.
+172 (2022), 475-496. <br>
 [2] I.M. Bulai, M.C. De Bonis, C. Laurita, V. Sagaria. Modeling metastatic tumor evolution, 
 numerical resolution and growth prediction. submitted 2022.
 
