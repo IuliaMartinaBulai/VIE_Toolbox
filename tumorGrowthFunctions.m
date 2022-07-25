@@ -4,7 +4,7 @@
 % Goal: Create a database of possible tumor growth laws both for primary
 %       and metastatic growth, for lung and breast case studies
 %
-% Use: [s,gamma,g] = tumorGrowthFunctions(varargin)
+% Use: [s,gamma,g] = tumorGrowthFunctions(varargin{:})
 %
 % Input: varargin - 1X16 cell containing 8 couples:
 %                   'grow_p',value1 - growth law of the primary tumor
