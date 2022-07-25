@@ -32,7 +32,7 @@ close all
 
 fprintf('Welcome to VIE demo #3\n');
 addpath('..');
-addpath('..\Utils');
+addpath('../Utils');
 fprintf('Solve the VIE  \n');
 
 % kernel, right-hand side term and Laguerre weight
