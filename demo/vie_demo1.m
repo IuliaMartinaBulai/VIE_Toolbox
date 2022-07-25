@@ -34,7 +34,7 @@ clear all
 close all
 fprintf('Welcome to VIE demo #1\n');
 addpath('..');
-addpath('..\Utils');
+addpath('../Utils');
 
 fprintf('Solve the VIE for default values \n');
 fprintf('Case study: breast \n');
