@@ -36,7 +36,7 @@ close all
 
 fprintf('Welcome to VIE demo #2\n');
 addpath('..');
-addpath('..\Utils');
+addpath('../Utils');
 
 fprintf('Solve the VIE \n');
 fprintf('Generalized logistic growth law for the primary tumor \n');
