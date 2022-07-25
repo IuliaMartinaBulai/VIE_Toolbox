@@ -42,7 +42,7 @@ T = 60;
 tic
 [M,err_rel_M,Nv,err_rel_Nv,j,C] = tumorGrowth(T);
 
-fprintf('Index j and condition number C \n');
+fprintf(' Index J and condition number C \n');
 [j, C]
 errM = max(err_rel_M);
 errNv = max(err_rel_Nv);
