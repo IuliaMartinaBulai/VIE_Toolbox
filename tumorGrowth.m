@@ -4,7 +4,7 @@
 % Goal: Compute the volume of the metastatic mass and the cumulative number 
 %       of metastases as solutions of Volterra Integral Equations
 %
-% Use: [M,err_rel_M,Nv,err_rel_Nv,j,C] = tumorGrowth(T,varargin)
+% Use: [M,err_rel_M,Nv,err_rel_Nv,j,C] = tumorGrowth(T,varargin{:})
 %
 % Input: T - final time point expressed in days
 %        varargin - 1X16 cell containing 8 couples:
