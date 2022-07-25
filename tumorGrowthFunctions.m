@@ -74,7 +74,7 @@ argselectAssign(control_params);
 argselectCheck(control_params,varargin);
 argselectAssign(varargin);
 
-[s] = chooses('grow_p',value1,'grow_m',value2,'tumor_type',value3);
+[s] = chooses(varargin{:});
 
 switch tumor_type
     case 'lung'
@@ -92,7 +92,7 @@ switch tumor_type
                 K = 4378;
                 nu = 1.4e-04;
                 vp = @(t) (v_p0*K/(v_p0^nu+(K^nu-v_p0^nu)*exp(-a*nu*t))^(1/nu));
-            case 'von_ben'
+            case 'von_bert'
                 a = 7.72*s;
                 gamm = 0.947;
                 b = 6.75*s;
@@ -127,7 +127,7 @@ switch tumor_type
                     error('V_{bar} not feasible ');
                 end
                 gamma = log ((v_m0^nu*((K/Vbar)^nu-1))/(K^nu-v_m0^nu))/(a*nu);
-            case 'von_ben'
+            case 'von_bert'
                 a = 7.72*s;
                 gamm = 0.947;
                 b = 6.75*s;
@@ -160,7 +160,7 @@ switch tumor_type
                 K = 1964;
                 nu = 2.68e-05;
                 vp = @(t) (v_p0*K/(v_p0^nu+(K^nu-v_p0^nu)*exp(-a*nu*t))^(1/nu));
-            case 'von_ben'
+            case 'von_bert'
                 a = 2.32*s;
                 gamm = 0.918;
                 b = 0.808*s;
@@ -195,7 +195,7 @@ switch tumor_type
                     error('V_{bar} not feasible ');
                 end
                 gamma = log ((v_m0^nu*((K/Vbar)^nu-1))/(K^nu-v_m0^nu))/(a*nu);
-            case 'von_ben'
+            case 'von_bert'
                 a = 2.32*s;
                 gamm = 0.918;
                 b = 0.808*s;
