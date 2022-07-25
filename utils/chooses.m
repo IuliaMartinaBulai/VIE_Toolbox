@@ -3,7 +3,7 @@
 %
 % Goal: Choose the scale value s corresponding to the selected tumor type
 %
-% Use: [s] = chooses(varargin)
+% Use: [s] = chooses(varargin{:})
 %
 % Input: varargin - 1X16 cell containing 8 couples:
 %                   'grow_p',value1 - growth law of the primary tumor
