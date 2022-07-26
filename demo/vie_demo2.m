@@ -36,7 +36,7 @@ close all
 
 fprintf('Welcome to VIE demo #2\n');
 addpath('..');
-addpath('../Utils');
+addpath('../utils');
 
 fprintf('Solve the VIE \n');
 fprintf('Generalized logistic growth law for the primary tumor \n');
@@ -48,8 +48,8 @@ tic
 varargin={'grow_p','gen_log','grow_m','gomp','tumor_type', 'lung'};
 [M,err_rel_M,Nv,err_rel_Nv,J,C]=tumorGrowth(T,varargin{:});
 
-fprintf('Index J and condition number \n');
-[J, C]
+fprintf('Index j and condition number \n');
+[j, C]
 errM = max(err_rel_M);
 errNv = max(err_rel_Nv);
 fprintf('Error for metastatic mass and for cumulative number of metastases \n');
