@@ -32,7 +32,7 @@ close all
 
 fprintf('Welcome to VIE demo #3\n');
 addpath('..');
-addpath('../Utils');
+addpath('../utils');
 fprintf('Solve the VIE  \n');
 
 % kernel, right-hand side term and Laguerre weight
@@ -48,7 +48,7 @@ t=linspace(0,40);
 tic
 [fm,err,j,C]=vie(t,K,g);
 
-fprintf('Index J, condition number and error\n');
+fprintf('Index j, condition number and error\n');
 [j,C,err]
 
 fprintf('Plot the Nystrom interpolating function \n');
