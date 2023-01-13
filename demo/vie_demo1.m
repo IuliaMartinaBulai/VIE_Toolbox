@@ -47,6 +47,7 @@ fprintf(' Index j and condition number C \n');
 errM = max(err_rel_M);
 errNv = max(err_rel_Nv);
 fprintf('Error for metastatic mass and for cumulative number of metastases \n');
+[errM, errNv]
 
 t = [1:T];
 
@@ -58,8 +59,6 @@ title('Breast')
 xlabel('Time (days)')
 legend('Error metastatic mass','Location','Best')
 
-pause 
-
 fprintf('Plot the error for the cumulative number of metastases \n');
 figure
 plot(t,err_rel_Nv, 'linewidth',2);
@@ -68,7 +67,6 @@ title('Breast')
 xlabel('Time (days)')
 legend('Error cumulative number','Location','Best')
 
-pause 
 
 fprintf('Plot metastatic mass \n');
 figure
@@ -78,7 +76,6 @@ title('Breast')
 xlabel('Time (days)')
 ylabel('Metastatic mass (volume)')
 
-pause
 
 fprintf('Plot cumulative number of metastases \n');
 figure

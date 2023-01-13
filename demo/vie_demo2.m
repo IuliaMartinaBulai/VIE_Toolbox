@@ -46,7 +46,7 @@ fprintf('Case study: lung \n');
 T = 60;
 tic
 varargin={'grow_p','gen_log','grow_m','gomp','tumor_type', 'lung'};
-[M,err_rel_M,Nv,err_rel_Nv,J,C]=tumorGrowth(T,varargin{:});
+[M,err_rel_M,Nv,err_rel_Nv,j,C]=tumorGrowth(T,varargin{:});
 
 fprintf('Index j and condition number \n');
 [j, C]
@@ -65,7 +65,6 @@ title('Lung')
 xlabel('Time (days)')
 legend('Error metastatic mass','Location','Best')
 
-pause 
 
 fprintf('Plot the error for the cumulative number of metastases \n');
 figure
@@ -75,7 +74,6 @@ title('Lung')
 xlabel('Time (days)')
 legend('Error cumulative number','Location','Best')
 
-pause 
 
 fprintf('Plot metastatic mass \n');
 figure
@@ -85,7 +83,6 @@ title('Lung')
 xlabel('Time (days)')
 ylabel('Metastatic mass (volume)')
 
-pause
 
 fprintf('Plot cumulative number of metastases \n');
 figure
